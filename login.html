@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login my portfolio project</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      padding:0;
+      margin: 0;
+    }
+    body{
+      background: aquamarine;
+      display: flex;
+      font-family: "Myanmar Sangam MN";
+      min-height: 100vh;
+    }
+    .container{
+      max-width: 90%;
+      width: 500px;
+      margin: auto;
+    }
+    .container form{
+      box-shadow: 0 8px 16px rgb(0,0,0,.3);
+      border-radius: 4px;
+      background: #888888;
+      height: 100%;
+      padding: 20px;
+      width: 100%;
+    }
+    .container form h1{
+      text-align: center;
+      margin-bottom: 24px;
+      color: #555555;
+    }
+    .contanier form .form-control {
+      padding: 0 10px;
+      margin: 10px 0 18px 0;
+      border: 1px solid silver;
+      border-radius: 4px;
+      background: white;
+      height: 40px;
+      width: 100%;
+    }
+    .container form .btn{
+      transition: .3s;
+      border-radius: 4px;
+      color: black;
+      text-transform: uppercase;
+      font-size: 16px;
+      cursor: pointer;
+      background: skyblue;
+      outline: none;
+      border: none;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 34px;
+
+
+    }
+    .container form.btn:hover{
+      opacity:.7;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <form action="">
+        <h1>Login Form</h1>
+        <div class="form-group">
+          <label for="">Email id</label>
+          <input type="text" class="form-control"required>
+        </div>
+        <div class="form-group">
+          <label for="">Password</label>
+          <input type="Password" class="form-control"required>
+        </div>
+        <input type="submit" class="btn" value="Login">
+      </form>
+    </div>
+</body>
+</html>
